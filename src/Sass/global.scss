@@ -1,0 +1,43 @@
+
+/* Variables */
+$bg-navBar: #313132;
+$font-gray-color:#dcdcdc;
+$font-white-color:#ffff;
+$lightBlue-color: #0071e3;
+$black-color: #1d1d1f;
+$orange-color:#bf4800;
+
+$font-text-light:'SFProText_Light';
+$font-text-regular:'SFProText_Regular';
+$font-display:'SFProDisplay';
+
+
+/* FONTS */
+@font-face {
+  font-family: 'SFProText_Regular';
+  src: local('SFProText_Regular'),
+        url('../assets/fonts/text/regular/SF_Pro_Text.ttf') format('ttf'),
+        url('../assets/fonts/text/regular/SF_Pro_Text.woff') format('woff');
+}
+@font-face {
+  font-family: 'SFProText_Light';
+  src: local('SFProText_Light'),
+        url('../assets/fonts/text/light/SF_Pro_Text_Light.ttf') format('ttf'),
+        url('../assets/fonts/text/light/SF_Pro_Text_Light.woff') format('woff');
+}
+@font-face {
+  font-family: 'SFProDisplay';
+  src: local('SFProDisplay'),
+        url('../assets/fonts/display/SF_Pro_Display_Regular.ttf') format('ttf'),
+        url('../assets/fonts/display/SF_Pro_Display_Regular.woff') format('woff');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: $font-display;
+}

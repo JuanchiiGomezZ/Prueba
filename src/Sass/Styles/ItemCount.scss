@@ -1,0 +1,32 @@
+.hooks {
+  font-family: $font-display;
+  width: 80%;
+  margin: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  .itemCounter {
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    .counter {
+      margin: 0 30px;
+    }
+    .operator{
+        cursor: pointer;
+    }
+  }
+
+  p {
+    margin-top: 10px;
+  }
+}
+
+
+@media (max-width:700px) {
+    .hooks{
+        margin: 30px auto;
+    }
+}

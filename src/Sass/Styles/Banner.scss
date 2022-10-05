@@ -1,0 +1,91 @@
+@mixin squareDimesions {
+  width: 45vw;
+  height: 40vw;
+  margin: 5px;
+}
+
+.banners {
+  background-color: #fbfbfd;
+  .bannerContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    img {
+      max-height: 100vh;
+      margin-left: 50px;
+      margin-top: 41px;
+    }
+    .bannerText {
+      margin-right: 50px;
+      height: 300px;
+      overflow: hidden;
+      .new {
+        color: #bf4800;
+        font-family: $font-text-light;
+        font-size: 16px;
+      }
+      .iphoneSE {
+        font-family: $font-display;
+        font-weight: bold;
+        font-size: 20px;
+        .SE {
+          font-size: 14px;
+          display: inline-flex;
+          border: 2px solid black;
+          border-radius: 5px;
+          padding: 2px;
+          text-align: center;
+        }
+      }
+      .midText{
+        margin: 13px 0 24px;
+        .loveThe {
+          font-family: $font-display;
+          font-size: 40px;
+          color: #2948b1;
+        }
+        
+      }
+      
+      #iPhoneSEButton {
+        background-color: #0071e3;
+        color: white;
+        border: 1px solid white;
+        font-family: $font-display;
+        padding: 8px 16px;
+        border-radius: 20px;
+        font-size: 22px;
+        border: none;
+        width: 80%;
+        cursor: pointer;
+        margin-top: 20px;
+        text-decoration: none;
+        &:hover {
+          background-color: white;
+          color: #0071e3;
+          border: 1px solid #0071e3;
+          transition: 0.25s;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1000px) {
+  .banners {
+    .bannerContainer {
+      flex-direction: column;
+      img {
+        margin: 0 !important;
+        max-width: 100%;
+      }
+      .bannerText {
+        margin-right: 0 !important;
+        margin-top: 50px;
+      }
+    }
+  }
+}
